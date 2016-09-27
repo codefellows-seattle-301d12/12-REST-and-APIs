@@ -2,7 +2,7 @@
   var repos = {};
 
   repos.allRepos = [];
-// TODO: create a githubToken.js file that we can use to generate our headers
+// DONE: create a githubToken.js file that we can use to generate our headers
          // properly.
   repos.requestRepos = function(callback) {
     /* TODO: How would you like to fetch your repos? Someone say AJAX?!
