@@ -46,6 +46,9 @@
         {{/if}}
       </li>
     </script>
+    <script id="follower-template" type="text/x-handlebars-template">
+      <li><a href="{{html_url}}">{{login}}</a></li>
+    </script>
   </head>
   <body>
     <header class="site-header clearfix">
@@ -95,7 +98,7 @@
         <section class="github-stats">
           <h1>Followers</h1>
           <ul class="followers">
-            <li>Followers begin here</li>
+            <li>Followers begin here:</li>
           </ul>
           <h1>Check out my Projects on GitHub:</h1>
           <ul class="projects">
@@ -131,12 +134,15 @@
     <!-- DONE: Be sure to include any new model files: -->
     <script src="/scripts/models/article.js"></script>
     <script src="/scripts/models/repo.js"></script>
+    <script src="/scripts/controllers/followersController.js"></script>
+    <script src="/scripts/models/followers.js"></script>
     <!-- View files: -->
     <!-- DONE: Be sure to include any new view files: -->
     <script src="/scripts/views/articleView.js"></script>
     <script src="/scripts/views/adminView.js"></script>
     <script src="/scripts/views/repoView.js"></script>
     <script src="/scripts/views/newArticle.js"></script>
+    <script src="/scripts/views/followerView.js"></script>
     <!-- Controller files: -->
     <script src="/scripts/controllers/articleController.js"></script>
     <script src="/scripts/controllers/aboutController.js"></script>

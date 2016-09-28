@@ -5,7 +5,7 @@
 // DONE: create a githubToken.js file that we can use to generate our headers
          // properly.
   repos.requestRepos = function(callback) {
-    /* TODO: How would you like to fetch your repos? Someone say AJAX?!
+    /* DONE: How would you like to fetch your repos? Someone say AJAX?!
       Do not forget to call the callback! */
     $.ajax({
       url: 'https://api.github.com/users/codefellows-seattle-301d12/repos',
